@@ -7,7 +7,42 @@
     <title>Evaluacion Intermedia Modulo 2</title>
   </head>
   <body>
-    <h1 class="title">Adivina el numero</h1>
+    <div class="principal__container">
+    <h1 class="title">Adivina el número</h1>
+    <form class="form__container" action="/signup" method="POST">
+      <div class="fill__container">
+        <label class="form__label" for="name">Introduce aquí tu número:</label>
+        <input
+          class="form__input jsintroduce"
+          id="introduce"
+          type="text"
+          name="introduce"
+        />
+        <div class="button">
+            <button class="button__form">Prueba</button>
+          </div>         
+      </div>
+      <div class="fill__container">
+        <input
+          placeholder="Pista:Escribe el numero y dale a Prueba"
+          class="form__input1 jstrack"
+          id="pista"
+          type="number"
+          name="pista"
+        />
+      </div>
+      <div class="fill__container">
+        <input
+          placeholder="Numero de intentos: 0"
+          class="form__input1 jsahits"
+          id="aciertos"
+          type="number"
+          name="aciertos"
+        />
+      </div>
+      </div>
+    </form>
+    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>
