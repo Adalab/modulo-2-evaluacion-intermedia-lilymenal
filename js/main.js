@@ -5,6 +5,7 @@ let userRandomNumber = document.querySelector ('.jsintroduce')
 const userClickButton = document.querySelector ('.jsbutton')
 let trackForUser = document.querySelector ('.jstrack');
 
+
 console.log(`Verificar`);
 function handleTrack() {
     let gameTrack = trackForUser
