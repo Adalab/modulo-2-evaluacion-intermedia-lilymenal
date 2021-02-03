@@ -6,43 +6,32 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Evaluacion Intermedia Modulo 2</title>
   </head>
-  <body>
-    <div class="principal__container">
+    <body>
+    <div class="principal__container js-container">
     <h1 class="title">Adivina el número</h1>
-    <form class="form__container" action="/signup" method="POST">
+    <div class=" containerRules js-containerRules">
+    <button class="rules js-rules">Reglas</button>
+    </div>
       <div class="fill__container">
-        <label class="form__label" for="name">Introduce aquí tu número:</label>
+        <p>Introduce aquí tu número:</p>    
         <input
           class="form__input jsintroduce"
           id="introduce"
           type="text"
           name="introduce"
+          value=""
         />
         <div class="button">
             <button class="button__form jsbutton">Prueba</button>
-          </div>         
+        </div>    
+        <div class="form__track">     
+        <p class="jstrack"></p>
       </div>
-      <div class="fill__container">
-        <input
-          class="form__input1 jstrack"
-          placeholder=""
-          id="pista"
-          type="text"
-          name="pista"
-        />
-      </div>
-      <div class="fill__container">
-        <input
-          placeholder="Numero de intentos: 0"
-          class="form__input1 jsahits"
-          id="aciertos"
-          type="number"
-          name="aciertos"
-        />
-      </div>
-      </div>
-    </form>
+      <div class="form__counter jshits">    
+        <p><span class=" form__counterjshits"></span></p>
+      </div>     
     </div>
     <script src="./js/main.js"></script>
+
   </body>
 </html>
